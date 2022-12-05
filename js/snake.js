@@ -1,10 +1,10 @@
 var x = [240, 240, 240];
 var y = [240, 240, 240];
 
-var r = Math.random();
-fx = ((r * 50) - (r * 50 % 1)) * 10;
-var r = Math.random();
-fy = ((r * 50) - (r * 50 % 1)) * 10;
+var r = Math.random() * 50;
+fx = (r - r % 1) * 10;
+var r = Math.random() * 50;
+fy = (r - (r % 1)) * 10;
 
 var l = 3;
 var ll = 3;
@@ -60,11 +60,10 @@ window.onload = function() {
         
                     l++;
         
-                    var r = Math.random();
-                    fx = ((r * 50) - (r * 50 % 1)) * 10;
-                
-                    var r = Math.random();
-                    fy = ((r * 50) - (r * 50 % 1)) * 10;
+                    var r = Math.random() * 50;
+                    fx = (r - r % 1) * 10;
+                    var r = Math.random() * 50;
+                    fy = (r - (r % 1)) * 10;
                     
                     if (l > maxL) { 
                         maxL = l; 
@@ -120,10 +119,10 @@ window.onload = function() {
                     x = [240, 240, 240];
                     y = [240, 240, 240];
                 
-                    var r = Math.random();
-                    fx = ((r * 50) - (r * 50 % 1)) * 10;
-                    var r = Math.random();
-                    fy = ((r * 50) - (r * 50 % 1)) * 10;
+                    var r = Math.random() * 50;
+                    fx = (r - r % 1) * 10;
+                    var r = Math.random() * 50;
+                    fy = (r - (r % 1)) * 10;
 
                     ctx.fillStyle = 'black';
                     ctx.fillRect(0, 0, 500, 500);
