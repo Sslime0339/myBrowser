@@ -95,8 +95,10 @@ window.onload = function() {
                     y[ll - 1] = ys;
                     
                     ctx.fillStyle = 'green';
-                    ctx.fillRect(x[ll - 1], y[ll - 1], 10, 10);
                     ctx.fillRect(x[0], y[0], 10, 10);
+
+                    ctx.fillStyle = 'red';
+                    ctx.fillRect(fx, fy, 10, 10);
 
                     ll -= 1;
                     if (ll < 2) {
